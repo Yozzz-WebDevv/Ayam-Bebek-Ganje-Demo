@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayam Bebek Ganje Mas Eko - Palangka Raya | Buka 24 Jam</title>
+  <meta name="description" content="Website Demo Ayam Bebek Ganje Mas Eko di Palangka Raya, Kalimantan Tengah. Nikmati pilihan ayam, bebek, lele, nila, dan berbagai paket menu favorit. Buka 24 Jam.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans for clean, bold, appetizing Indonesian culinary typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons for clean, lightweight UI symbols -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. NAVIGATION BAR (STICKY)
+       ======================================================================== -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+      <a href="#beranda" class="nav-brand" aria-label="Ayam Bebek Ganje Mas Eko">
+        <span class="brand-title">GANJE <span>MAS EKO</span></span>
+        <span class="brand-subtitle">Palangka Raya • Buka 24 Jam</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" aria-label="Menu Navigasi Utama">
+        <a href="#beranda" class="nav-link active">Beranda</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#galeri" class="nav-link">Galeri</a>
+        <a href="#outlet" class="nav-link">Outlet</a>
+      </nav>
+
+      <!-- Primary Action CTA -->
+      <div class="nav-cta">
+        <a href="#menu" class="btn btn-primary-red">
+          <i class="fa-solid fa-utensils"></i>
+          <span>Lihat Menu</span>
+        </a>
+      </div>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Buka navigasi menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Backdrop -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Menu Navigasi Mobile">
+    <div class="mobile-nav-header">
+      <span class="brand-title">GANJE <span>MAS EKO</span></span>
+      <span class="brand-subtitle">Palangka Raya</span>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#beranda" class="mobile-nav-link active">Beranda</a>
+      <a href="#menu" class="mobile-nav-link">Menu</a>
+      <a href="#tentang" class="mobile-nav-link">Tentang</a>
+      <a href="#galeri" class="mobile-nav-link">Galeri</a>
+      <a href="#outlet" class="mobile-nav-link">Outlet</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="#menu" class="btn btn-primary-red" style="width: 100%;">
+        <i class="fa-solid fa-utensils"></i>
+        <span>Lihat Menu</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       2. HERO SECTION
+       ======================================================================== -->
+  <section class="hero-section" id="beranda">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge-wrap">
+          <span class="badge-24h">
+            <span class="indicator-dot"></span>
+            BUKA 24 JAM
+          </span>
+        </div>
+        <h1 class="hero-title">AYAM BEBEK GANJE <span class="highlight-yellow">MAS EKO</span></h1>
+        <h2 class="hero-tagline">Gurih, Pedas, Nagih.</h2>
+        <p class="hero-description">
+          Nikmati pilihan ayam, bebek, lele, nila, dan berbagai menu favorit Ganje.
+        </p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-accent-yellow">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Lihat Menu</span>
+          </a>
+          <a href="#outlet" class="btn btn-outline-white">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>Temukan Outlet</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <img 
+            src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=900&q=80" 
+            alt="Sajian Ayam Goreng Ganje Gurih dan Sambal" 
+            class="hero-img"
+          >
+          <div class="hero-card-badge">
+            <h4>Ayam & Bebek Ganje</h4>
+            <p>Pilihan Gurih & Pedas Khas Palangka Raya</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. FEATURE / WHY GANJE SECTION
+       ======================================================================== -->
+  <section class="features-section">
+    <div class="container">
+      <div class="features-grid">
+        <!-- Card 1 -->
+        <article class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-clock fa-xl"></i>
+          </div>
+          <h3 class="feature-title">BUKA 24 JAM</h3>
+          <p class="feature-text">Mau makan pagi, siang, sore, atau malam? Ganje siap menemani.</p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-drumstick-bite fa-xl"></i>
+          </div>
+          <h3 class="feature-title">PILIHAN MENU BERAGAM</h3>
+          <p class="feature-text">Ayam, bebek, lele, nila, dan berbagai pilihan paket.</p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-wallet fa-xl"></i>
+          </div>
+          <h3 class="feature-title">RAMAH DI KANTONG</h3>
+          <p class="feature-text">Berbagai pilihan menu dan paket untuk makan sendiri maupun bersama.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. MENU SECTION
+       ======================================================================== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Daftar Sajian</span>
+        <h2 class="section-title">Menu Ganje</h2>
+        <p class="section-subtitle">Pilihan menu untuk menemani lapar kapan saja.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="menu-filter-bar">
+        <button class="filter-btn active" data-filter="all">Semua Menu</button>
+        <button class="filter-btn" data-filter="paket">Menu Paket</button>
+        <button class="filter-btn" data-filter="tambahan">Menu Satuan & Tambahan</button>
+      </div>
+
+      <!-- MAIN MENU (PAKET) -->
+      <div class="menu-group">
+        <h3 class="menu-grid-title"><i class="fa-solid fa-box-archive"></i> Menu Paket Pilihan</h3>
+        <div class="menu-cards-grid">
+          
+          <!-- Paket Hemat -->
+          <article class="food-card" data-category="paket">
+            <div class="food-card-img-wrap">
+              <span class="food-card-tag">Paket</span>
+              <img 
+                src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80" 
+                alt="Paket Hemat Ayam Ganje" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Paket Hemat</h4>
+              <p class="food-card-desc">Pilihan hemat ayam ganje lengkap dengan nasi dan sambal gurih pedas.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-label">Harga</span>
+                  <span class="food-price">Rp15.000</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paket Jumbo -->
+          <article class="food-card" data-category="paket">
+            <div class="food-card-img-wrap">
+              <span class="food-card-tag">Favorit</span>
+              <img 
+                src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=600&q=80" 
+                alt="Paket Jumbo Ayam Ganje" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Paket Jumbo</h4>
+              <p class="food-card-desc">Porsi ayam ganje lebih besar dan mantap untuk porsi makan puas.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-label">Harga</span>
+                  <span class="food-price">Rp23.000</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paket Bebek -->
+          <article class="food-card" data-category="paket">
+            <div class="food-card-img-wrap">
+              <span class="food-card-tag">Spesial</span>
+              <img 
+                src="https://images.unsplash.com/photo-1518492104633-130d0cc84637?auto=format&fit=crop&w=600&q=80" 
+                alt="Paket Bebek Ganje" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Paket Bebek</h4>
+              <p class="food-card-desc">Bebek goreng gurih meresap dengan tekstur renyah dan bumbu khas ganje.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-label">Harga</span>
+                  <span class="food-price">Rp35.000</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paket Lele -->
+          <article class="food-card" data-category="paket">
+            <div class="food-card-img-wrap">
+              <span class="food-card-tag">Paket</span>
+              <img 
+                src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" 
+                alt="Paket Lele Ganje" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Paket Lele</h4>
+              <p class="food-card-desc">Ikan lele goreng renyah garing dengan sambal korek dan lalapan segar.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-label">Harga</span>
+                  <span class="food-price">Rp20.000</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paket Nila -->
+          <article class="food-card" data-category="paket">
+            <div class="food-card-img-wrap">
+              <span class="food-card-tag">Paket</span>
+              <img 
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" 
+                alt="Paket Nila Ganje" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Paket Nila</h4>
+              <p class="food-card-desc">Ikan nila goreng bumbu sedap, digoreng garing renyah dan gurih alami.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-label">Harga</span>
+                  <span class="food-price">Rp25.000</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ADDITIONAL MENU -->
+      <div class="menu-group">
+        <h3 class="menu-grid-title"><i class="fa-solid fa-bowl-food"></i> Menu Satuan & Tambahan</h3>
+        <div class="menu-cards-grid">
+          
+          <!-- Ayam Ganje Hemat -->
+          <article class="food-card" data-category="tambahan">
+            <div class="food-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80" 
+                alt="Ayam Ganje Hemat" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Ayam Ganje Hemat</h4>
+              <p class="food-card-desc">Ayam goreng ganje satuan porsi hemat renyah berbumbu.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-label">Harga</span>
+                  <span class="food-price">Rp11.000</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Ayam Ganje Jumbo -->
+          <article class="food-card" data-category="tambahan">
+            <div class="food-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=600&q=80" 
+                alt="Ayam Ganje Jumbo" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Ayam Ganje Jumbo</h4>
+              <p class="food-card-desc">Ayam goreng ganje satuan potongan jumbo dengan bumbu khas.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-label">Harga</span>
+                  <span class="food-price">Rp18.000</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bebek Ganje -->
+          <article class="food-card" data-category="tambahan">
+            <div class="food-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1518492104633-130d0cc84637?auto=format&fit=crop&w=600&q=80" 
+                alt="Bebek Ganje Satuan" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Bebek Ganje</h4>
+              <p class="food-card-desc">Bebek goreng ganje satuan dengan rempah gurih sedap.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-label">Harga</span>
+                  <span class="food-price">Rp30.000</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nasi -->
+          <article class="food-card" data-category="tambahan">
+            <div class="food-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80" 
+                alt="Nasi Putih Hangat" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Nasi</h4>
+              <p class="food-card-desc">Nasi putih hangat pulen sebagai pelengkap utama santap lezat.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-no-badge">Menu Tambahan</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kangkung Goreng -->
+          <article class="food-card" data-category="tambahan">
+            <div class="food-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" 
+                alt="Kangkung Goreng" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Kangkung Goreng</h4>
+              <p class="food-card-desc">Kangkung goreng gurih renyah pendamping pas santapan ayam dan bebek.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-no-badge">Menu Tambahan</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sambal Korek -->
+          <article class="food-card" data-category="tambahan">
+            <div class="food-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=600&q=80" 
+                alt="Sambal Korek Pedas" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Sambal Korek</h4>
+              <p class="food-card-desc">Sambal korek pedas gurih nagih yang disiram minyak panas khas Ganje.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-no-badge">Menu Tambahan</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Es Teh / Teh Panas -->
+          <article class="food-card" data-category="tambahan">
+            <div class="food-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80" 
+                alt="Es Teh Segar" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Es Teh / Teh Panas</h4>
+              <p class="food-card-desc">Minuman teh segar pilihan dingin atau hangat pemuas dahaga.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-no-badge">Minuman</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nutrisari -->
+          <article class="food-card" data-category="tambahan">
+            <div class="food-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=600&q=80" 
+                alt="Nutrisari Jeruk" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Nutrisari</h4>
+              <p class="food-card-desc">Minuman sari buah jeruk manis dan menyegarkan.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-no-badge">Minuman</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Air Mineral -->
+          <article class="food-card" data-category="tambahan">
+            <div class="food-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&w=600&q=80" 
+                alt="Air Mineral Dingin / Normal" 
+                class="food-card-img"
+              >
+            </div>
+            <div class="food-card-body">
+              <h4 class="food-card-name">Air Mineral</h4>
+              <p class="food-card-desc">Air mineral bersih dan segar untuk menemani santapan.</p>
+              <div class="food-card-footer">
+                <div class="food-price-box">
+                  <span class="food-price-no-badge">Minuman</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Small Note Disclaimer -->
+      <div class="menu-disclaimer">
+        <i class="fa-solid fa-circle-info"></i> Harga dapat berubah sewaktu-waktu. Informasi ini merupakan preview menu konsep demo.
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. ABOUT SECTION
+       ======================================================================== -->
+  <section class="about-section" id="tentang">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-img-frame">
+          <img 
+            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80" 
+            alt="Suasana Santap di Ayam Bebek Ganje Mas Eko" 
+            class="about-img"
+          >
+          <div class="about-accent-badge">
+            <i class="fa-solid fa-fire"></i> Rasa Khas Ganje
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-tag">Mengenal Ganje</span>
+        <h2 class="about-title">Tentang Ganje Mas Eko</h2>
+        <p class="about-text">
+          Ayam Bebek Ganje Mas Eko menyediakan berbagai pilihan menu ayam, bebek, lele, dan nila dengan pilihan paket yang cocok untuk berbagai kebutuhan makan.
+        </p>
+        <div class="about-highlights">
+          <div class="about-highlight-item">
+            <i class="fa-solid fa-check"></i> Gurih & Renyah
+          </div>
+          <div class="about-highlight-item">
+            <i class="fa-solid fa-check"></i> Sambal Pedas Nagih
+          </div>
+          <div class="about-highlight-item">
+            <i class="fa-solid fa-check"></i> Buka 24 Jam
+          </div>
+          <div class="about-highlight-item">
+            <i class="fa-solid fa-check"></i> Banyak Outlet
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. FOOD GALLERY SECTION ("YANG BIKIN NGILER")
+       ======================================================================== -->
+  <section class="gallery-section" id="galeri">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Galeri Visual</span>
+        <h2 class="section-title">Yang Bikin Ngiler</h2>
+        <p class="section-subtitle">Lihat berbagai sajian Ganje.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Item 1 (Large span) -->
+        <div class="gallery-item span-2-col span-2-row" tabindex="0" role="button" aria-label="Lihat foto Ayam Goreng Ganje">
+          <img 
+            src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=900&q=80" 
+            alt="Ayam Goreng Ganje Renyah" 
+            class="gallery-img"
+          >
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-text">Ayam Goreng Ganje Renyah</span>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Lihat foto Bebek Goreng Ganje">
+          <img 
+            src="https://images.unsplash.com/photo-1518492104633-130d0cc84637?auto=format&fit=crop&w=600&q=80" 
+            alt="Bebek Goreng Bumbu Gurih" 
+            class="gallery-img"
+          >
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-text">Bebek Goreng Gurih</span>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Lihat foto Sambal Korek">
+          <img 
+            src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=600&q=80" 
+            alt="Sambal Korek Ulek Segar Pedas" 
+            class="gallery-img"
+          >
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-text">Sambal Korek Nagih</span>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Lihat foto Kangkung Goreng">
+          <img 
+            src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" 
+            alt="Kangkung Goreng Khas Ganje" 
+            class="gallery-img"
+          >
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-text">Kangkung Goreng Gurih</span>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Lihat foto Nila Goreng">
+          <img 
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" 
+            alt="Nila Goreng Garing" 
+            class="gallery-img"
+          >
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-text">Nila Goreng Garing</span>
+          </div>
+        </div>
+
+        <!-- Item 6 (Span 2 col) -->
+        <div class="gallery-item span-2-col" tabindex="0" role="button" aria-label="Lihat foto Paket Komplit Nasi dan Lalapan">
+          <img 
+            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" 
+            alt="Paket Komplit Nasi Ayam Lalapan" 
+            class="gallery-img"
+          >
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-text">Paket Komplit Nasi & Lalapan</span>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Lihat foto Ikan Lele Goreng">
+          <img 
+            src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" 
+            alt="Lele Goreng Renyah" 
+            class="gallery-img"
+          >
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-text">Lele Goreng Garing</span>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Lihat foto Suasana Outlet Santap">
+          <img 
+            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" 
+            alt="Suasana Santap di Outlet Ganje" 
+            class="gallery-img"
+          >
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-text">Suasana Outlet Ramah</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox Modal Component -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Tutup foto">&times;</button>
+      <img src="" alt="Pratinjau Foto Ganje" id="lightboxImg" class="lightbox-img">
+      <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       7. 24-HOUR FEATURE SECTION
+       ======================================================================== -->
+  <section class="feature-24h-section">
+    <div class="container feature-24h-inner">
+      <div class="feature-24h-text-wrap">
+        <h2 class="feature-24h-headline">BUKA 24 JAM</h2>
+        <p class="feature-24h-subtext">Lagi lapar kapan saja? Ganje siap menemani.</p>
+      </div>
+
+      <div class="feature-24h-badge-box">
+        <div class="badge-clock-icon">
+          <i class="fa-regular fa-clock"></i>
+        </div>
+        <h3>24 JAM NONSTOP</h3>
+        <p>Pagi • Siang • Sore • Malam</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. OUTLET SECTION
+       ======================================================================== -->
+  <section class="outlets-section" id="outlet">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Jaringan Outlet</span>
+        <h2 class="section-title">Temukan Outlet Ganje</h2>
+        <p class="section-subtitle">
+          <strong>Banyak Outlet, Satu Rasa Ganje.</strong><br>
+          Temukan outlet Ganje Mas Eko yang paling dekat dengan kamu.
+        </p>
+      </div>
+
+      <!-- Outlets Grid (Palangka Raya Outlets) -->
+      <div class="outlets-grid">
+        
+        <!-- Outlet 1: Diponegoro -->
+        <article class="outlet-card">
+          <div class="outlet-card-header">
+            <span class="outlet-pin-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span class="outlet-badge-24h">Buka 24 Jam</span>
+          </div>
+          <h3 class="outlet-name">Diponegoro</h3>
+          <p class="outlet-desc">Kawasan Jl. Diponegoro, Palangka Raya. Siap menyajikan menu hangat untuk santap di tempat atau bawa pulang.</p>
+          <div class="outlet-card-action">
+            <a href="https://maps.google.com/?q=Ayam+Bebek+Ganje+Mas+Eko+Diponegoro+Palangka+Raya" target="_blank" rel="noopener noreferrer" class="btn btn-outline-red" style="width: 100%;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>Lihat Lokasi</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Outlet 2: G. Obos -->
+        <article class="outlet-card">
+          <div class="outlet-card-header">
+            <span class="outlet-pin-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span class="outlet-badge-24h">Buka 24 Jam</span>
+          </div>
+          <h3 class="outlet-name">G. Obos</h3>
+          <p class="outlet-desc">Kawasan Jl. G. Obos, Palangka Raya. Akses mudah dan nyaman untuk makan bersama keluarga atau teman.</p>
+          <div class="outlet-card-action">
+            <a href="https://maps.google.com/?q=Ayam+Bebek+Ganje+Mas+Eko+G+Obos+Palangka+Raya" target="_blank" rel="noopener noreferrer" class="btn btn-outline-red" style="width: 100%;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>Lihat Lokasi</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Outlet 3: Gobos XII -->
+        <article class="outlet-card">
+          <div class="outlet-card-header">
+            <span class="outlet-pin-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span class="outlet-badge-24h">Buka 24 Jam</span>
+          </div>
+          <h3 class="outlet-name">Gobos XII</h3>
+          <p class="outlet-desc">Kawasan Gobos XII, Palangka Raya. Pilihan tepat untuk santap malam maupun sarapan pagi kapan saja.</p>
+          <div class="outlet-card-action">
+            <a href="https://maps.google.com/?q=Ayam+Bebek+Ganje+Mas+Eko+Gobos+Palangka+Raya" target="_blank" rel="noopener noreferrer" class="btn btn-outline-red" style="width: 100%;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>Lihat Lokasi</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Outlet 4: Yos Sudarso -->
+        <article class="outlet-card">
+          <div class="outlet-card-header">
+            <span class="outlet-pin-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span class="outlet-badge-24h">Buka 24 Jam</span>
+          </div>
+          <h3 class="outlet-name">Yos Sudarso</h3>
+          <p class="outlet-desc">Kawasan Jl. Yos Sudarso, Palangka Raya. Lokasi strategis dekat pusat kegiatan untuk santap cepat dan nikmat.</p>
+          <div class="outlet-card-action">
+            <a href="https://maps.google.com/?q=Ayam+Bebek+Ganje+Mas+Eko+Yos+Sudarso+Palangka+Raya" target="_blank" rel="noopener noreferrer" class="btn btn-outline-red" style="width: 100%;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>Lihat Lokasi</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Outlet 5: RTA Milono -->
+        <article class="outlet-card">
+          <div class="outlet-card-header">
+            <span class="outlet-pin-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span class="outlet-badge-24h">Buka 24 Jam</span>
+          </div>
+          <h3 class="outlet-name">RTA Milono</h3>
+          <p class="outlet-desc">Kawasan Jl. RTA Milono, Palangka Raya. Melayani pelanggan 24 jam dengan sajian hangat yang selalu siap dinikmati.</p>
+          <div class="outlet-card-action">
+            <a href="https://maps.google.com/?q=Ayam+Bebek+Ganje+Mas+Eko+RTA+Milono+Palangka+Raya" target="_blank" rel="noopener noreferrer" class="btn btn-outline-red" style="width: 100%;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>Lihat Lokasi</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Interactive Outlet Finder Filter Bar -->
+      <div class="outlet-finder-box">
+        <h3 class="outlet-finder-title">Cari Outlet Terdekat</h3>
+        <p class="outlet-finder-desc">Ketik nama jalan atau daerah outlet kamu di Palangka Raya untuk menemukan yang paling dekat.</p>
+        <div class="outlet-search-wrap">
+          <input 
+            type="text" 
+            id="outletSearchInput" 
+            class="outlet-search-input" 
+            placeholder="Cari misalnya: Diponegoro, Obos, Yos..." 
+            aria-label="Cari Outlet Terdekat"
+          >
+          <button class="btn btn-primary-red" type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Cari</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. SOCIAL MEDIA CTA SECTION
+       ======================================================================== -->
+  <section class="social-section">
+    <div class="container">
+      <div class="social-card">
+        <div class="social-content">
+          <span class="section-tag yellow">Media Sosial</span>
+          <h2 class="social-title">Ikuti Ganje</h2>
+          <p class="social-text">
+            Temukan menu, promo, dan informasi terbaru Ganje Mas Eko melalui Instagram.
+          </p>
+        </div>
+        <div class="social-action">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+            <span>Kunjungi Instagram Ganje</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. FINAL CTA SECTION
+       ======================================================================== -->
+  <section class="final-cta-section">
+    <div class="container">
+      <div class="final-cta-content">
+        <h2 class="final-cta-headline">Lagi Lapar?</h2>
+        <p class="final-cta-subheadline">Yuk, cari outlet Ganje terdekat.</p>
+        <div class="final-cta-buttons">
+          <a href="#outlet" class="btn btn-accent-yellow">
+            <i class="fa-solid fa-map-pin"></i>
+            <span>Temukan Outlet</span>
+          </a>
+          <a href="#menu" class="btn btn-outline-white">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Lihat Menu</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-col">
+          <h3 class="footer-brand-title">GANJE <span>MAS EKO</span></h3>
+          <p class="footer-tagline">Palangka Raya • Buka 24 Jam</p>
+          <p class="footer-info">
+            Pilihan menu ayam, bebek, lele, nila, dan aneka paket favorit khas Ganje Mas Eko yang siap menemani kapan saja.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="#beranda" class="footer-link">Beranda</a></li>
+            <li><a href="#menu" class="footer-link">Menu</a></li>
+            <li><a href="#tentang" class="footer-link">Tentang</a></li>
+            <li><a href="#galeri" class="footer-link">Galeri</a></li>
+            <li><a href="#outlet" class="footer-link">Outlet</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Sosial Media</h4>
+          <p class="footer-info" style="margin-bottom: 1rem;">Ikuti kami untuk informasi terkini:</p>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram Resmi Ganje Mas Eko">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+            <span>Instagram Ganje</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Disclaimer -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ayam Bebek Ganje Mas Eko. Konsep Demo Website.</p>
+        <p class="footer-demo-badge">Palangka Raya, Kalimantan Tengah, Indonesia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JavaScript File -->
+  <script src="script.js" defer></script>
+</body>
+</html>
